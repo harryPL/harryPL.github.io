@@ -20,6 +20,7 @@
 	<link href="css/animate.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
 
 </head>
 
@@ -28,52 +29,16 @@
 	<section id="intro" class="home-slide text-light">
 
 		<!-- Carousel -->
-    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    	<div id="carousel-example-generic" class="carousel" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
-			  	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  	<li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+<!-- 			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
 			</ol>
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 			    <div class="item active">
-			    	<img src="img/1.jpg" alt="First slide">
-                    <!-- Static Header -->
-                    <div class="header-text hidden-xs">
-                        <div class="col-md-12 text-center">
-                            <h2>
-                            	<span>Vitesse Sp. z o.o</span>
-                            </h2>
-                            <br>
-                            <h3>
-                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                            </h3>
-                            <br>
-                            <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">O nas</a><a class="btn btn-theme btn-sm btn-min-block" href="#service">Usługi</a></div>
-                        </div>
-                    </div><!-- /header-text -->
-			    </div>
-			    <div class="item">
-			    	<img src="img/2.jpg" alt="Second slide">
-			    	<!-- Static Header -->
-                    <div class="header-text hidden-xs">
-                        <div class="col-md-12 text-center">
-                            <h2>
-                                <span>Vitesse Sp. z o.o</span>
-                            </h2>
-                            <br>
-                            <h3>
-                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                            </h3>
-                            <br>
-                            <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">O nas</a><a class="btn btn-theme btn-sm btn-min-block" href="#service">Usługi</a></div>
-                        </div>
-                    </div><!-- /header-text -->
-			    </div>
-			    <div class="item">
 			    	<img src="img/3.jpg" alt="Third slide">
 			    	<!-- Static Header -->
                     <div class="header-text hidden-xs">
@@ -83,22 +48,22 @@
                             </h2>
                             <br>
                             <h3>
-                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            	<span>Transport. Składowanie. Przeładunki.</span>
                             </h3>
                             <br>
                             <div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">O nas</a><a class="btn btn-theme btn-sm btn-min-block" href="#service">Usługi</a></div>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">O firmie</a><a class="btn btn-theme btn-sm btn-min-block" href="#service">Usługi</a></div>
                         </div>
                     </div><!-- /header-text -->
 			    </div>
 			</div>
 			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+<!-- 			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
 		    	<span class="glyphicon glyphicon-chevron-left"></span>
 			</a>
 			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
 		    	<span class="glyphicon glyphicon-chevron-right"></span>
-			</a>
+			</a> -->
 		</div><!-- /carousel -->
 
 	</section>
@@ -129,7 +94,7 @@
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="nav navbar-nav navbar-right">
                                                                   <li class="active"><a href="#intro">Home</a></li>
-                                                                  <li><a href="#about">O Nas</a></li>
+                                                                  <li><a href="#about">O Firmie</a></li>
 																   <li><a href="#service">Usługi</a></li>
                                                                   <li><a href="#contact">Kontakt</a></li>
                                                             </ul>
@@ -151,7 +116,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
 					<div class="section-heading text-center">
-					<h2 class="h-bold">O nas</h2>
+					<h2 class="h-bold">O Firmie</h2>
 					<div class="divider-header"></div>
 					<p>Vitesse Sp. z o.o. rozpoczęła swoją dzialność w 2008 roku, oferując kompleksowe usługi logistyczne.</p>
 					</div>
@@ -174,9 +139,9 @@
             <br/><br/><br/>		
 			<p>Głównym celem naszej działalności jest:</p>
 			<ul style="list-style-type:disc">
-			 <li>Jakość usług</li>
-			 <li>Optymalna cena</li>
-			 <li>Zadowolenie klienta</li>
+			 <li id="black-ul">Jakość usług</li>
+			 <li id="black-ul">Optymalna cena</li>
+			 <li id="black-ul">Zadowolenie klienta</li>
 			</ul>
 			<p>Stale inwestujemy w rozwój firmy, kwalifikacje pracowników, a także wdrażamy nowoczesne systemu technologiczne IT, co daje nam możliwości dynamicznego rozwoju.</p>
 			<p>Oferty przygotowujemy z uwzględnieniem  indywidualnych potrzeb każdego Klienta.</p> 			
@@ -215,19 +180,18 @@
 				<div class="wow fadeInLeft" data-wow-delay="0.2s">
                 <div class="service-box">
 					<div class="service-icon">
-						<span class="fa fa-cogs fa-5x"></span> 
+						<span class="flaticon-boxes2"></span> 
 					</div>
 					<div class="service-desc">						
-						<h5>Składowanie</h5>
-						<p>
-						Struktura magazynowa pozwala na prowadzenie dystrybucji sypkich, masowych materiałów</p>
-						<p>
+						<h5 id="h5-font-color">Składowanie</h5>
+						<p>Struktura magazynowa pozwala na prowadzenie dystrybucji sypkich, masowych materiałów:</p>
+						<div id="list-left">
 						<ul style="list-style-type:disc">
-						 <li>luzem – w magazynach, silosach magazynowych, ładowni barki</li>
-						 <li>zjednostkowany – w magazynie płaskim, na placach składowych, w magazynach wysokiego składowanie</li>
-						 <li>składowanie w magazynach posiadających dopuszczenie służb weterynaryjnych i SANEPID, skałach celnych</li>
+						 <li><span>luzem – w magazynach, silosach magazynowych, ładowni barki</span></li>
+						 <li><span>zjednostkowany – w magazynie płaskim, na placach składowych, w magazynach wysokiego składowanie</span></li>
+						 <li><span>składowanie w magazynach posiadających dopuszczenie służb weterynaryjnych i SANEPID, skałach celnych</span></li>
+						</div>
 						</ul>  
-						</p>
 					</div>
                 </div>
 				</div>
@@ -236,13 +200,11 @@
 				<div class="wow fadeInUp" data-wow-delay="0.2s">
                 <div class="service-box">
 					<div class="service-icon">
-						<span class="fa fa-camera fa-5x"></span> 
+						<span class="flaticon-delivery23"></span> 
 					</div>
 					<div class="service-desc">
-						<h5>Transport</h5>
-						<p>
+						<h5 id="h5-font-color">Transport</h5>
 						Zapewniamy obsługę spedycyjną transportu morskiego, drogowego oraz kolejowego, zaś dobór transportu zależy od potrzeb klienta a także rodzaju towaru.
-						</p>
 					</div>
                 </div>
 				</div>
@@ -251,21 +213,21 @@
 				<div class="wow fadeInUp" data-wow-delay="0.2s">
                 <div class="service-box">
 					<div class="service-icon">
-						<span class="fa fa-laptop fa-5x"></span> 
+						<span class="flaticon-crane6"></span> 
 					</div>
 					<div class="service-desc">
-						<h5>Przeładunki</h5>
-						<p>
-							<ul style="list-style-type:disc">
-							 <li>załadunek  i wyladunek towarów sypkich luzem do kontenera i z kontenera</li>
-							 <li>formowanie i rozformowywanie kontenerow</li>
-							 <li>przesypywanie towarów sypkich z big-bagow do cysterny</li>
-							 <li>przeładunek portowy drewna</li>
-							 <li>ładunków zjednostkowanych</li>
-							 <li>ładunków sypkich</li>
-							 <li>złomu</li>
-							</ul>  
-						</p>
+						<h5 id="h5-font-color">Przeładunki</h5>
+							<div id="list-left">
+							<ul>
+							 <li><span>załadunek  i wyladunek towarów sypkich luzem do kontenera i z kontenera</span></li>
+							 <li><span>formowanie i rozformowywanie kontenerow</span></li>
+							 <li><span>przesypywanie towarów sypkich z big-bagow do cysterny</span></li>
+							 <li><span>przeładunek portowy drewna</span></li>
+							 <li><span>ładunków zjednostkowanych</span></li>
+							 <li><span>ładunków sypkich</span></li>
+							 <li><span>złomu</span></li>
+							</ul>
+							</div>  
 					</div>
                 </div>
 				</div>
@@ -280,12 +242,12 @@
 	
 	<!-- Section: contact -->
     <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">
-		<div class="container marginbot-50">
+		<div class="container marginbot-10">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
 					<div class="section-heading text-center">
-					<h2 class="h-bold">Skontaktuj się z nami</h2>
+					<h2 class="h-bold">Kontakt</h2>
 					<div class="divider-header"></div>
 					<p>Vitesse Sp. z o.o.</p>
 					</div>
@@ -297,61 +259,26 @@
 		
 		<div class="container">
 
-			<div class="row marginbot-80">
+			<div class="row marginbot-10">
 				<div class="col-md-8 col-md-offset-2">
-					<!-- 	<form id="contact-form" class="wow bounceInUp" data-wow-offset="10" data-wow-delay="0.2s">
-						<div class="row marginbot-20">
-							<div class="col-md-6 xs-marginbot-20">
-								<input type="text" class="form-control input-lg" id="name" placeholder="Enter name" required="required" />
-							</div>
-							<div class="col-md-6">
-								<input type="email" class="form-control input-lg" id="email" placeholder="Enter email" required="required" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-										<input type="text" class="form-control input-lg" id="subject" placeholder="Subject" required="required" />
-								</div>
-								<div class="form-group">
-									<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
-										placeholder="Message"></textarea>
-								</div>						
-								<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
-									Send Message</button>
-							</div>
-						</div>
-						</form> -->
 						<p>ul. Portowa 11</p>
 						<p>76-150 Darłowo</p>
 						<p>tel. +48 78 588 28 60</p>
 						<p>e-mail: kontakt@vitesse.com.pl</p>
 						<p>e-mail: spedycja@vitesse.com.pl</p>
+						<p>NIP: PL4990580368, KRS: 0000311692 SR w Koszalinie</p> 
+
 
 				</div>
 			</div>	
-
-
+					<div class="item active">
+					<img src="img/2.jpg"/>
+				</div>
 		</div>
 	</section>
 	<!-- /Section: contact -->
 
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					
-					<div class="text-center">
-						<a href="#intro" class="totop"><i class="fa fa-angle-up fa-3x"></i></a>
-
-						<!-- <p>Valera, Inc. 795 Folsom Ave, Suite 600 San Francisco, CA 94107<br />
-						&copy;Copyright 2014 - Shuffle. Designed by <a href="http://bootstraptaste.com">Bootstraptaste</a></p> -->
-					</div>
-				</div>
-			</div>	
-		</div>
-	</footer>
 
     <!-- Core JavaScript Files -->
     <script src="js/jquery.min.js"></script>	 

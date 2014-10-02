@@ -12,10 +12,12 @@ a,.tp-caption a.btn:hover {
 
 .carousel-indicators .active {
     background-color: #E3E142;
+    display: none;
 }
 
 .header-text h2 span {
-    background-color: #E3E142;
+    background-color: rgba(255, 252, 8, 0.31);
+    border-radius: 15px;
 }
 
 
