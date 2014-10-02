@@ -1,185 +1,373 @@
-<!-- TO DO's
- - tekst na obrazku glownym (Le pink i haslo reklamowe)
- - przerobienie grafiki tak zeby nie ucinalo ryja przy zmianie rozmiaru
- - zrobienie "tagów" w sekcjach do ktorych beda prowadzic linki (ex. #instytut)
- - carousel dla zdjec lokalu
- - przyciski do kontaktu (poszukac grafik)
- - stopka (w podobnym stylu co navbar ale szare, copyright wycentrowany
- - uzupelnic content
- - przyciski zmienic na rozowe
- - dolozyc kolumne w "Specjalisci" z kontaktem do kazdego
- - slowa kluczowe w headzie
- - favicon
--->
-
-
 <!DOCTYPE html>
-<html>
-<head>
-        <title>Le Pink</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen" />
-      <link rel="stylesheet" type="text/css" href="css/bootstrap-custom.css" media="screen" />
-      <link rel="stylesheet" type="text/css" href="css/fontsize.css" media="screen" />
+<html lang="en">
 
-<!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="js/google_maps.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shuffle bootstrap 3 one page template</title>
+	
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+
 </head>
 
-<body class="font-size-10">
-<div class="navbar navbar-fixed-top navbar-inverse" role="navigation" color="blue">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Le Pink</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Misja</a></li>
-            <li><a href="inc/services">Usługi</a></li>
-            <li><a href="#instytut">Instytut</a></li>
-            <li><a href="#kadra">Specjaliści</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </div><!-- /.navbar -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	
+	<section id="intro" class="home-slide text-light">
 
-<div class="container-full">
-      <img src="img/jumbotron-bg.jpg" class="img-responsive">
+		<!-- Carousel -->
+    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			    <div class="item active">
+			    	<img src="img/1.jpg" alt="First slide">
+                    <!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                            	<span>Vitesse Sp. z o.o</span>
+                            </h2>
+                            <br>
+                            <h3>
+                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </h3>
+                            <br>
+                            <div class="">
+                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">O nas</a><a class="btn btn-theme btn-sm btn-min-block" href="#service">Usługi</a></div>
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			    <div class="item">
+			    	<img src="img/2.jpg" alt="Second slide">
+			    	<!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                                <span>Vitesse Sp. z o.o</span>
+                            </h2>
+                            <br>
+                            <h3>
+                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </h3>
+                            <br>
+                            <div class="">
+                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">O nas</a><a class="btn btn-theme btn-sm btn-min-block" href="#service">Usługi</a></div>
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			    <div class="item">
+			    	<img src="img/3.jpg" alt="Third slide">
+			    	<!-- Static Header -->
+                    <div class="header-text hidden-xs">
+                        <div class="col-md-12 text-center">
+                            <h2>
+                                <span>Vitesse Sp. z o.o</span>
+                            </h2>
+                            <br>
+                            <h3>
+                            	<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            </h3>
+                            <br>
+                            <div class="">
+                                <a class="btn btn-theme btn-sm btn-min-block" href="#about">O nas</a><a class="btn btn-theme btn-sm btn-min-block" href="#service">Usługi</a></div>
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		    	<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		    	<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div><!-- /carousel -->
 
- </div>
- <!-- Features -->
+	</section>
+	<!-- /Section: intro -->
+	
+	
+    <!-- Navigation -->
+    <div id="navigation">
+        <nav class="navbar navbar-custom" role="navigation">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-md-2">
+                                                   <div class="site-logo">
+                                                            <a href="index.html" class="brand"><img src="img/logo.png"/></a>
+                                                    </div>
+                                          </div>
+                                          
 
- <div class="container">
-  <h3 class="font-size-4">Pare slow sssss o tym jak zajebisty jest Le Pink itd Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
-    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum,
-    dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu,
-    vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus egets neque. </h3>
- </div>
+                                          <div class="col-md-10">
+                         
+                                                      <!-- Brand and toggle get grouped for better mobile display -->
+                                          <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                                <i class="fa fa-bars"></i>
+                                                </button>
+                                          </div>
+                                                      <!-- Collect the nav links, forms, and other content for toggling -->
+                                                      <div class="collapse navbar-collapse" id="menu">
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                                  <li class="active"><a href="#intro">Home</a></li>
+                                                                  <li><a href="#about">O Nas</a></li>
+																   <li><a href="#service">Usługi</a></li>
+                                                                  <li><a href="#contact">Kontakt</a></li>
+                                                            </ul>
+                                                      </div>
+                                                      <!-- /.Navbar-collapse -->
+                             
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- /.container -->
+                        </nav>
+    </div> 
+    <!-- /Navigation -->  
 
-    <div class="container">
-            <div class="row panel-default">
-                <div class="col-md-4">
-                    <h3>Oferta</h3>
-                <p>Pare slow o tym jak zajebisty jest Le Pink itd Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
-    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, </p>
-                <p><a href="#" class="btn btn-primary btn-lg pink">Dowiedz się więcej</a></p>
-            </div>
+	<!-- Section: about -->
+    <section id="about" class="home-section color-dark bg-white">
+		<div class="container marginbot-10">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2 class="h-bold">O nas</h2>
+					<div class="divider-header"></div>
+					<p>Vitesse Sp. z o.o. rozpoczęła swoją dzialność w 2008 roku, oferując kompleksowe usługi logistyczne.</p>
+					</div>
+					</div>
+				</div>
+			</div>
 
-            <div class="col-md-4">
-                    <h3>Instytut</h3>
-                <p>Pare slow o tym jak zajebisty jest Le Pink itd Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
-    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, </p>
-                <p><a href="#" class="btn btn-primary btn-lg orange">Dowiedz się więcej</a></p>
-            </div>
+		</div>
 
-            <div class="col-md-4">
-                    <h3>Kadra</h3>
-                <p>Pare slow o tym jak zajebisty jest Le Pink itd Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
-    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, </p>
-                <p><a href="#" class="btn btn-primary btn-lg orange">Dowiedz się więcej</a></p>
-            </div>
+		<div class="container">
+
+		
+        <div class="row">
+		
+			<div class="col-md-6">
+			    <img src="img/dummy1.jpg" alt="" class="img-responsive" />
+      
+           </div>
+            <div class="col-md-6">
+            <br/><br/><br/>		
+			<p>Głównym celem naszej działalności jest:</p>
+			<ul style="list-style-type:disc">
+			 <li>Jakość usług</li>
+			 <li>Optymalna cena</li>
+			 <li>Zadowolenie klienta</li>
+			</ul>
+			<p>Stale inwestujemy w rozwój firmy, kwalifikacje pracowników, a także wdrażamy nowoczesne systemu technologiczne IT, co daje nam możliwości dynamicznego rozwoju.</p>
+			<p>Oferty przygotowujemy z uwzględnieniem  indywidualnych potrzeb każdego Klienta.</p> 			
          </div>
-        </div>
+		
 
-<section class="bg-1">
-  <div class="col-sm-10 col-sm-offset-1 text-center">
-  </div>
-</section>
+        </div>		
+		</div>
 
-  <div class="container">
-    <h3 align="center">Instytut</h3>
-            <div class="row panel-default">
-                <p>Pare slow o tym jak zajebisty jest Le Pink itd Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
-    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, </p>
-            </div>
-</div>
+	</section>
+	<!-- /Section: about -->
+	
+	
+	<!-- Section: services -->
+    <section id="service" class="home-section color-dark bg-gray">
+		<div class="container marginbot-20">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2 class="h-bold">Usługi</h2>
+					<div class="divider-header"></div>
+					<p>Zakres naszych dzialań: fracht morski, transport drogowy i kolejowy, składowanie, kompletowanie ładunków, formowanie kontenerów, dystrybucja, rozformowywanie kontenerów.</p>
+					</div>
+					</div>
+				</div>
+			</div>
 
+		</div>
 
-<section class="bg-2">
-  <div class="col-sm-10 col-sm-offset-1 text-center">
+		<div class="text-center">
+		<div class="container">
 
-
-  </div>
-</section>
-  <div class="container">
-
-    <h3 align="center">Specjaliści</h3>
-  </div>
-
-    <div class="container">
-            <div class="row panel-default">
-              <div class="col-md-2">
-      <!-- foto--> <img class="img-circle" src="img/osoba1.jpg">
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-4">
+				<div class="wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-cogs fa-5x"></span> 
+					</div>
+					<div class="service-desc">						
+						<h5>Składowanie</h5>
+						<p>
+						Struktura magazynowa pozwala na prowadzenie dystrybucji sypkich, masowych materiałów</p>
+						<p>
+						<ul style="list-style-type:disc">
+						 <li>luzem – w magazynach, silosach magazynowych, ładowni barki</li>
+						 <li>zjednostkowany – w magazynie płaskim, na placach składowych, w magazynach wysokiego składowanie</li>
+						 <li>składowanie w magazynach posiadających dopuszczenie służb weterynaryjnych i SANEPID, skałach celnych</li>
+						</ul>  
+						</p>
+					</div>
                 </div>
-                   <div class="col-md-10">
-                    <h4>Osoba 1</h4>
-                <p>Pare slow o tym jak zajebisty jest Le Pink itd Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
-    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, </p>
+				</div>
             </div>
-            </div>
-           <div class="row panel-default">
-              <div class="col-md-2">
-         <img class="img-circle" src="img/osoba2.jpg">
-                   </div>
-                   <div class="col-md-10">
-                    <h4>Osoba 2</h4>
-                <p>Pare slow o tym jak zajebisty jest Le Pink itd Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
-    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, </p>
+			<div class="col-xs-6 col-sm-3 col-md-4">
+				<div class="wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-camera fa-5x"></span> 
+					</div>
+					<div class="service-desc">
+						<h5>Transport</h5>
+						<p>
+						Zapewniamy obsługę spedycyjną transportu morskiego, drogowego oraz kolejowego, zaś dobór transportu zależy od potrzeb klienta a także rodzaju towaru.
+						</p>
+					</div>
                 </div>
-</div>
-           <div class="row panel-default">
-            <div class="col-md-2">
-          <!-- foto--> <img class="img-circle" src="img/osoba3.jpg">
-                   </div>
-                   <div class="col-md-10">
-                    <h4>Osoba 3</h4>
-                <p>Pare slow o tym jak zajebisty jest Le Pink itd Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus.
-    Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, </p>
-                </div>
+				</div>
             </div>
-         </div>
+			<div class="col-xs-6 col-sm-3 col-md-4">
+				<div class="wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-laptop fa-5x"></span> 
+					</div>
+					<div class="service-desc">
+						<h5>Przeładunki</h5>
+						<p>
+							<ul style="list-style-type:disc">
+							 <li>załadunek  i wyladunek towarów sypkich luzem do kontenera i z kontenera</li>
+							 <li>formowanie i rozformowywanie kontenerow</li>
+							 <li>przesypywanie towarów sypkich z big-bagow do cysterny</li>
+							 <li>przeładunek portowy drewna</li>
+							 <li>ładunków zjednostkowanych</li>
+							 <li>ładunków sypkich</li>
+							 <li>złomu</li>
+							</ul>  
+						</p>
+					</div>
+                </div>
+				</div>
+            </div>
+        </div>		
+		</div>
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
 
-  <section class="bg-3">
-  <div class="col-sm-10 col-sm-offset-1 text-center">
-  </div>
-</section>
+	
+	<!-- Section: contact -->
+    <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2 class="h-bold">Skontaktuj się z nami</h2>
+					<div class="divider-header"></div>
+					<p>Vitesse Sp. z o.o.</p>
+					</div>
+					</div>
+				</div>
+			</div>
 
-  <div class="container">
-    <h3 align="center">Kontakt</h3>
+		</div>
+		
+		<div class="container">
 
-  </div>
-  <div id="map"></div>
+			<div class="row marginbot-80">
+				<div class="col-md-8 col-md-offset-2">
+					<!-- 	<form id="contact-form" class="wow bounceInUp" data-wow-offset="10" data-wow-delay="0.2s">
+						<div class="row marginbot-20">
+							<div class="col-md-6 xs-marginbot-20">
+								<input type="text" class="form-control input-lg" id="name" placeholder="Enter name" required="required" />
+							</div>
+							<div class="col-md-6">
+								<input type="email" class="form-control input-lg" id="email" placeholder="Enter email" required="required" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+										<input type="text" class="form-control input-lg" id="subject" placeholder="Subject" required="required" />
+								</div>
+								<div class="form-group">
+									<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
+										placeholder="Message"></textarea>
+								</div>						
+								<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
+									Send Message</button>
+							</div>
+						</div>
+						</form> -->
+						<p>ul. Portowa 11</p>
+						<p>76-150 Darłowo</p>
+						<p>tel. +48 78 588 28 60</p>
+						<p>e-mail: kontakt@vitesse.com.pl</p>
+						<p>e-mail: spedycja@vitesse.com.pl</p>
 
-         <!-- End Features -->
-    <footer>
-        <p>&copy; FatBoy Soulutions 2014</p>
-      </footer>
-<!-- Footer -->
-    <!-- Javascript -->
-    <!-- JavaScript plugins (requires jQuery) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+				</div>
+			</div>	
+
+
+		</div>
+	</section>
+	<!-- /Section: contact -->
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					
+					<div class="text-center">
+						<a href="#intro" class="totop"><i class="fa fa-angle-up fa-3x"></i></a>
+
+						<!-- <p>Valera, Inc. 795 Folsom Ave, Suite 600 San Francisco, CA 94107<br />
+						&copy;Copyright 2014 - Shuffle. Designed by <a href="http://bootstraptaste.com">Bootstraptaste</a></p> -->
+					</div>
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>	 
     <script src="js/bootstrap.min.js"></script>
-    <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-    <script src="js/respond.js"></script>
-    <script src="js/parallax.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+
+    <script src="js/custom.js"></script>
 
 </body>
+
 </html>
