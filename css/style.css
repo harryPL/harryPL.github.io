@@ -398,11 +398,11 @@ hr.bold {
 /* --- section bg var --- */
 
 .bg-white {
-	background: #fff;
+	background: #f6f5f5;
 }
 
 .bg-gray {
-	background: #f9f9f9;
+	background: #f0eeef;
 }
 
 
@@ -410,6 +410,9 @@ hr.bold {
 	background: #404040;
 }
 
+.bg-lightgray{
+    background: #eaeaea;
+}
 /* --- section color var --- */
 
 .text-light {
