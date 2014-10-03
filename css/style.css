@@ -532,8 +532,8 @@ section#intro {
 /* Carousel Header Styles */
 .header-text {
     position: absolute;
-    top: 20%;
-    left: 1.8%;
+    top: 30%;
+    left: -10%;
     right: auto;
     width: 96.66666666666666%;
     color: #fff;
