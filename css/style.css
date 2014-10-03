@@ -1043,7 +1043,7 @@ a.btn:focus{
 	}
 }
 
-#list-left li{
+.list-left li{
 	text-align: left;
 
 }
@@ -1053,7 +1053,7 @@ a.btn:focus{
 	color: #0000ff;
 }*/
 
-#h5-font-color{
+.h5-font-color{
 	font-size: 24px;
 	color:#0000FF;
 }
